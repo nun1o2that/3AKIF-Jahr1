@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="136B9516358E0657">
+  <PROJECT FORMAT="1.00" NAME="Algorithmus1_Zahlenratespiel" AUTHOR="mmmilosxx" CREATED="2022.10.14 21:42:56" MODIFIED="2022.10.18 14:21:35">
+    <DIAGRAMS>
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="Zahlenratespiel" CREATED="2022.10.14 21:43:12" MODIFIED="2022.10.18 14:21:35">
+        <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="12">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Zahlenratespiel]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Scanner eingabe
+Random randomNum
+int zufallszahl = randomNum.nextInt(100)
+int tipp
+int versuche = 0]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapLoopStart" FORMAT="1.00" ID="12" ASSOCIATE="14">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA["Tipp 1-100 eingeben: "]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[Eingabe von tipp]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[versuche = versuche + 1]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="19">
+                <TEXT><![CDATA[tipp > zufallszahl]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="8">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="22">
+                <TEXT><![CDATA["Tipp zu hoch!"]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="9">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="28">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="10">
+              <FIGURE SUBTYPE="PapLoopEnd" FORMAT="1.00" ID="14" ASSOCIATE="12">
+                <TEXT><![CDATA[tipp != zufallszahl]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="11">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="7">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="21">
+                <TEXT><![CDATA[tipp < zufallszahl]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="8">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="27">
+                <TEXT><![CDATA["Tipp zu niedrig!"]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="9">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="34">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="31">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="8">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="30">
+                <TEXT><![CDATA["Tipp ist richtig! Anzahl an Versuchen: " + versuche]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="9">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="36">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="12" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="18" FROM="10" TO="19" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="16" FROM="6" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="17" FROM="8" TO="10" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="13" FROM="12" TO="6" TEXT="true" />
+          <CONNECTION FORMAT="1.00" ID="15" FROM="14" TO="2" TEXT="false" />
+          <CONNECTION FORMAT="1.00" ID="20" FROM="19" TO="22" TEXT="true" />
+          <CONNECTION FORMAT="1.00" ID="23" FROM="22" TO="28" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="24" FROM="19" TO="21" TEXT="false" />
+          <CONNECTION FORMAT="1.00" ID="26" FROM="21" TO="27" TEXT="true" />
+          <CONNECTION FORMAT="1.00" ID="29" FROM="28" TO="14" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="32" FROM="21" TO="31" TEXT="false (default)" />
+          <CONNECTION FORMAT="1.00" ID="33" FROM="31" TO="30" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="35" FROM="27" TO="34" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="37" FROM="30" TO="36" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="38" FROM="36" TO="34" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="39" FROM="34" TO="28" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+    </DIAGRAMS>
+  </PROJECT>
+</FRAME>

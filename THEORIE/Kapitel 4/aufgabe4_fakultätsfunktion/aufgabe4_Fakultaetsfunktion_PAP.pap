@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="DC30E3ED71FD7DBB">
+  <PROJECT FORMAT="1.00" NAME="Fakultaetsfunktion" AUTHOR="mmmilosxx" CREATED="2022.10.15 18:21:31" MODIFIED="2022.10.18 14:50:11">
+    <DIAGRAMS>
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="Fakultaetsfunktion" CREATED="2022.10.15 18:21:38" MODIFIED="2022.10.18 14:50:11">
+        <LAYOUT FORMAT="1.00" COLUMNS="2" ROWS="15">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Fakultaetsfunktion]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[int n
+int zaehler = 1
+int ergebnis = 1
+Scanner eingabe]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="69">
+                <TEXT><![CDATA[Programmüberschrift]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="67">
+                <TEXT><![CDATA["n eingeben: "]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[Eingabe von n]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="20">
+                <TEXT><![CDATA[(n != 0) && (n != 1)]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapLoopStart" FORMAT="1.00" ID="6" ASSOCIATE="8">
+                <TEXT><![CDATA[n > zaehler]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="8">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="12">
+                <TEXT><![CDATA[ergebnis = ergebnis * (n - zaehler)]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="9">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="16">
+                <TEXT><![CDATA[zaehler = zaehler + 1]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="10">
+              <FIGURE SUBTYPE="PapLoopEnd" FORMAT="1.00" ID="8" ASSOCIATE="6">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="11">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="14">
+                <TEXT><![CDATA[ergebnis = ergebnis * n]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="12">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="18">
+                <TEXT><![CDATA[Ausgabe von ergebnis]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="13">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="61">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="14">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="6">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="64">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="12">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="50">
+                <TEXT><![CDATA[Ausgabe von n + "! = 1"]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="13">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="59">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="69" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="8" TO="14" TEXT="false" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="12" TEXT="true" />
+          <CONNECTION FORMAT="1.00" ID="11" FROM="10" TO="20" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="13" FROM="12" TO="16" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="15" FROM="14" TO="18" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="17" FROM="16" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="41" FROM="18" TO="61" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="21" FROM="20" TO="6" TEXT="true" />
+          <CONNECTION FORMAT="1.00" ID="65" FROM="20" TO="64" TEXT="false" />
+          <CONNECTION FORMAT="1.00" ID="51" FROM="50" TO="59" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="62" FROM="61" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="66" FROM="64" TO="50" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="63" FROM="59" TO="61" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="68" FROM="67" TO="10" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="70" FROM="69" TO="67" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+    </DIAGRAMS>
+  </PROJECT>
+</FRAME>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="2C3725BCD3C8E037">
+  <PROJECT FORMAT="1.00" NAME="Algorithmus2_Ganzzahldivision" AUTHOR="mmmilosxx" CREATED="2022.10.14 21:54:49" MODIFIED="2022.10.18 14:32:51">
+    <DIAGRAMS>
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="Ganzzahldivision" CREATED="2022.10.14 21:54:57" MODIFIED="2022.10.18 14:32:51">
+        <LAYOUT FORMAT="1.00" COLUMNS="1" ROWS="15">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Ganzzahldivision]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="51">
+                <TEXT><![CDATA[int x_Dividend
+int y_Divisor
+int q_Quotient = 0
+int r_Rest
+Scanner eingabe]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA["Geben Sie den Dividend ein: "]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[Eingabe von x_Dividend]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA["Geben Sie den Divisor ein: "]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="12">
+                <TEXT><![CDATA[Eingabe von y_Divisor]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapLoopStart" FORMAT="1.00" ID="47" ASSOCIATE="49">
+                <TEXT><![CDATA[x_Dividend >= y_Divisor]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="8">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="18">
+                <TEXT><![CDATA[q_Quotient = q_Quotient + 1]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="9">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="54">
+                <TEXT><![CDATA[x_Dividend = x_Dividend - y_Divisor]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="10">
+              <FIGURE SUBTYPE="PapLoopEnd" FORMAT="1.00" ID="49" ASSOCIATE="47">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="11">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="27">
+                <TEXT><![CDATA[r_Rest = x_Dividend]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="12">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="43">
+                <TEXT><![CDATA["Quotient: " + Ausgabe von q_Quotient]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="13">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="45">
+                <TEXT><![CDATA["Rest: " + Ausgabe von r_Rest]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="14">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="52" FROM="51" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="51" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="8" TO="10" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="13" FROM="12" TO="47" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="53" FROM="18" TO="54" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="56" FROM="49" TO="27" TEXT="false" />
+          <CONNECTION FORMAT="1.00" ID="55" FROM="54" TO="49" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="41" FROM="10" TO="12" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="42" FROM="27" TO="43" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="44" FROM="43" TO="45" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="46" FROM="45" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="48" FROM="47" TO="18" TEXT="true" />
+        </CONNECTIONS>
+      </DIAGRAM>
+    </DIAGRAMS>
+  </PROJECT>
+</FRAME>

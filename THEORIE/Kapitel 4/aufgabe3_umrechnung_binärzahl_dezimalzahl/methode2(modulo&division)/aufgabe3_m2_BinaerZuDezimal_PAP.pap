@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="286336C35183CD19">
+  <PROJECT FORMAT="1.00" NAME="Binaer zu Dezimal" AUTHOR="mmmilosxx" CREATED="2022.10.18 14:07:41" MODIFIED="2022.10.18 14:39:11">
+    <DIAGRAMS>
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="Binaer zu Dezimal (long, Division, Modulo)" CREATED="2022.10.18 14:07:43" MODIFIED="2022.10.18 14:39:11">
+        <LAYOUT FORMAT="1.00" COLUMNS="1" ROWS="17">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Binaer zu Dezimal (long, Division, Modulo)]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[long zahl
+long ergebnis = 0
+int zahlLaenge
+int modulo
+int condition1 = 0
+int condition2
+Scanner eingabe]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA["Binaerzahl eingeben: "]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[Eingabe von zahl]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[zahlLaenge = (int)(Math.log10(zahl) + 1)]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="12">
+                <TEXT><![CDATA[condition2 = zahlLaenge]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="14">
+                <TEXT><![CDATA[zahlLaenge = 0]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="8">
+              <FIGURE SUBTYPE="PapLoopStart" FORMAT="1.00" ID="16" ASSOCIATE="18">
+                <TEXT><![CDATA[(condition1 < condition2)]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="9">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="20">
+                <TEXT><![CDATA[modulo = (int)(zahl % 2)]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="10">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="22">
+                <TEXT><![CDATA[zahl = zahl / 10]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="11">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="24">
+                <TEXT><![CDATA[ergebnis = ergebnis + (int)( modulo * (Math.pow(2, zahlLaenge)) )]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="12">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="26">
+                <TEXT><![CDATA[zahlLaenge = zahlLaenge + 1]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="13">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="28">
+                <TEXT><![CDATA[condition2 = condition2 - 1]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="14">
+              <FIGURE SUBTYPE="PapLoopEnd" FORMAT="1.00" ID="18" ASSOCIATE="16">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="15">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="30">
+                <TEXT><![CDATA["Dezimalzahl: " + Ausgabe von ergebnis]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="16">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="8" TO="10" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="11" FROM="10" TO="12" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="13" FROM="12" TO="14" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="15" FROM="14" TO="16" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="19" FROM="18" TO="30" TEXT="false" />
+          <CONNECTION FORMAT="1.00" ID="17" FROM="16" TO="20" TEXT="true" />
+          <CONNECTION FORMAT="1.00" ID="21" FROM="20" TO="22" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="23" FROM="22" TO="24" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="25" FROM="24" TO="26" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="27" FROM="26" TO="28" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="29" FROM="28" TO="18" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="31" FROM="30" TO="2" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+    </DIAGRAMS>
+  </PROJECT>
+</FRAME>
