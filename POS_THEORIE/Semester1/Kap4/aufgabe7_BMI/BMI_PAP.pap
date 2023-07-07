@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="4E2437F15457FE7F">
+  <PROJECT FORMAT="1.00" NAME="BMI" AUTHOR="mmmilosxx" CREATED="2022.10.17 15:47:00" MODIFIED="2022.10.18 15:00:38">
+    <DIAGRAMS>
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="Body-Mass-Index" CREATED="2022.10.17 15:47:05" MODIFIED="2022.10.18 15:00:38">
+        <LAYOUT FORMAT="1.00" COLUMNS="4" ROWS="14">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Body-Mass-Index]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="48">
+                <TEXT><![CDATA[double gewicht
+double koerperGroesse
+double BMI
+Scanner eingabe]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Programm Überschrift]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA["Gewicht (in kg) eingeben: "]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[Eingabe von gewicht]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA["Koerpergroesse (in cm) eingeben: "]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="12">
+                <TEXT><![CDATA[Eingabe von koerperGroesse]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="8">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="14">
+                <TEXT><![CDATA[koerperGroesse = koerperGroesse / 100]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="9">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="16">
+                <TEXT><![CDATA[BMI = gewicht / (Math.pow(koerperGroesse, 2))]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="10">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="18">
+                <TEXT><![CDATA[BMI <= 19]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="11">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="30">
+                <TEXT><![CDATA["Ihr BMI ist: " + Ausgabe von BMI
+"Kommentar: Untergewicht"]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="12">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="39">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="13">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="10">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="20">
+                <TEXT><![CDATA[(BMI > 25) && (BMI <= 30)]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="11">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="32">
+                <TEXT><![CDATA["Ihr BMI ist: " + Ausgabe von BMI
+"Kommentar: Uebergewicht"]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="12">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="23">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="10">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="21">
+                <TEXT><![CDATA[BMI > 30]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="11">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="34">
+                <TEXT><![CDATA["Ihr BMI ist: " + Ausgabe von BMI
+"Kommentar: Adipositas"]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="12">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="26">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="3" ROW="10">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="44">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="3" ROW="11">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="36">
+                <TEXT><![CDATA["Ihr BMI ist: " + Ausgabe von BMI
+"Kommentar: Normalgewicht"]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="3" ROW="12">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="37">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="48" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="8" TO="10" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="11" FROM="10" TO="12" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="13" FROM="12" TO="14" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="15" FROM="14" TO="16" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="17" FROM="16" TO="18" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="19" FROM="18" TO="30" TEXT="true" />
+          <CONNECTION FORMAT="1.00" ID="22" FROM="18" TO="20" TEXT="false" />
+          <CONNECTION FORMAT="1.00" ID="24" FROM="20" TO="32" TEXT="true" />
+          <CONNECTION FORMAT="1.00" ID="25" FROM="20" TO="21" TEXT="false" />
+          <CONNECTION FORMAT="1.00" ID="27" FROM="21" TO="34" TEXT="true" />
+          <CONNECTION FORMAT="1.00" ID="47" FROM="36" TO="37" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="40" FROM="39" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="33" FROM="32" TO="23" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="35" FROM="34" TO="26" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="46" FROM="44" TO="36" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="31" FROM="30" TO="39" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="41" FROM="23" TO="39" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="42" FROM="26" TO="23" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="43" FROM="37" TO="26" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="29" FROM="21" TO="44" TEXT="false (default)" />
+          <CONNECTION FORMAT="1.00" ID="49" FROM="48" TO="4" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+    </DIAGRAMS>
+  </PROJECT>
+</FRAME>

@@ -1,0 +1,37 @@
+Kompiller
+Fehlerhaft in der Rechtschreibung. Entweder das englische Wort
+"Compiler", oder man könnte im Deutschen "Kompilierer" sagen.
+
+Construction the compiler of
+Fehlerhaft in der Satzstellung (-> entspricht nicht den Regeln
+der englischen Sprache).
+Stattdessen: "Construction of the compiler..."
+			
+@while()
+Fehlerhaft in der Syntax (Grammatik). In Java wird das @-Zeichen 
+für Anmerkungen benutzt, zum Beispiel der Beschreibung von Klassen
+oder Methoden (@param, @author, @return, @version, ...).
+
+while(a=5;)
+Fehlerhaft in der Syntax. Strichpunkte stellen das Ende einer
+Anweisung dar. Sie können nicht in der Bedingungsklammer einer
+Kontrollstruktur gesetzt werden.
+Gleichzeitig fehlerhaft in der Semantik. 1 Istgleich stellt einen 
+Zuweisungsoperator dar. In der runden Klammer wird bei Kontroll-
+strukturen ein bool'scher Wert erwartet.
+Stattdessen: while(a==5)
+
+while(a=5)
+Gleicher Semantikfehler wie oben.
+Stattdessen: while(a==5)
+
+A compiler is a POSIX library.
+Grammatikalisch richtig. Ob auch inhaltlich, müsste man nachforschen.
+
+float i;i = "Hello"; i++;
+Fehlerhaft in der Semantik. in einer Float-Variable kann keine 
+Zeichenfolge, also String, gespeichert werden.
+
+A compiler is a computer program that translates text written
+in a source language into another target language.
+Richtig.

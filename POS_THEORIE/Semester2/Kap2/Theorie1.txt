@@ -1,0 +1,31 @@
+• Laden von Daten aus einer Datenbank, z.B. alle Beiträge eines Benutzers
++ Das Laden selber z.B mit einer foreach-Schleife. Die Beiträge sind vielleicht in einer Liste gespeichert, da man nicht voraussehen
+kann, wie viele Beiträge der Benutzer schreibt.
+
+
+• Eingabe einer unbekannten Anzahl an Messwerten
++ Bei diesem Beispiel bietet sich eine ArrayList / List an, da deren Länge beliebig groß sein und verändert werden kann.
+
+
+• Berechnung der Durchschnittstemperatur eines Tages (24 Messwerte)
++ Hier ein normales Array, da eine fixe Anzahl an Werten gegeben ist.
+
+
+• Abbildung eines 2-dimensionalen Spielfeldes für Minesweeper
++ Kann z.B mit einem 2-dimensionalen Array dargestellt werden.
+
+
+• Befüllen eines Arrays, bzw. einer Liste mit einer foreach-Schleife
+Das Füllen von Arrays / Listen funktioniert am besten mit einer herkömmlichen for-Schleife. Bei foreach-Schleifen werden die enthaltenen
+Elemente zurückgegebenen, die man nicht einfach so verändern kann. Bei einer normalen Schleife kann man einen Integer von 0 aufwärts zählen
+lassen und diesen als Index benutzen, um an diesen Stellen die Werte zu verändern.
+
+
+• Berechne und vergleiche den theoretischen Speicherbedarf für folgende Beispiele:
+	10 x Integer: 	 40 Bytes
+	5 x Long:		 40 Bytes
+	265 x Byte: 		 265 Bytes
+	20 x Double:		 160 Bytes
+	5 x 10 x Integer: 200 Bytes	
+	50 x String:		 hängt von der Enkodierung und der Länge des Strings ab
+

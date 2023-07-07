@@ -1,0 +1,48 @@
+Algorithmus Rabattberechnung_StefanieKarov
+------------------------------------------
+Eingabe: nacheinander Kundennummer, dann Jahresumsatz
+Ausgabe: Programm fragt nach Kundennummer und Jahresumsatz // Endbetrag und abgezogener Rabattwert werden ausgegeben
+
+begin
+
+
+	int KN
+	double JU
+	double Rabatt
+
+	String frage
+
+	Scanner eingabe =: new Scanner (System.in)
+
+
+AUSGABE Programmüberschrift
+
+
+	do
+
+		AUSGABE "Geben Sie Ihre Kundennummer ein: "
+		Eingabe: KN
+
+		AUSGABE "Geben Sie Ihren Jahresumsatz ein: "
+		Eingabe: JU
+
+		
+		if JU > 10000 then
+			Rabatt =: JU * 0.03
+			Ausgabe: "Ihr Rabatt: 0.03"
+
+		else 
+			Rabatt =: JU * 0.02
+			Ausgabe: "Ihr Rabatt: 0.02"
+
+		
+		AUSGABE "Ihr Endbetrag: " + (JU - Rabatt)
+		AUSGABE "Abgezogen wurden: " + Rabatt
+
+		AUSGABE Frage nach Wiederholung des Programms
+
+	while ( frage.equals("J") || frage.equals("j") || frage.equals("Ja") || frage.equals("ja") || frage.equals("JA") )
+
+
+end
+

@@ -1,0 +1,5 @@
+Bei herkömmlichen Arrays wird ein Wert gleich nach dem Index gesucht, also muss nicht "durchgezählt" werden.
+
+Bei der Binärsuche wird in der Mitte gestartet und dannbestimmt, ob der gesuchte Wert in der ersten oder zweiten Hälfte liegt. Der "Weg" zum Wert hin wird dabei immer halbiert.
+
+Bubblesort sortiert eine unsortierte Liste, z.B aufsteigend von der kleinsten Zahl zur größten. Die Variante ist besonders langsam, weil der Vergleich und das Austauschen von Werten, und somit das Durchlaufen der Liste so lange / oft gemacht werden muss bis alle Werte an der richtigen Stelle stehen.

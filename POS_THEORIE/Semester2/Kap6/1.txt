@@ -1,0 +1,24 @@
+a) Ja. Beide Sprachen besitzen die wichtigsten Programmierkonzepte (Vezweigungen, Schleifen, Funktionen, ...). Das Umwandeln von einer Sprache in die andere sollte fast immer möglich sein, die Programmstruktur ist halt verschieden.
+
+
+b) Ist zwar anfangs verwirrend, hilft aber bei Security-Geschichten, Übersichtlichkeit, usw.
+
+
+c) Mehrfachvererbung = Eine Klasse greift auf mehrere Überklassen gleichzeitig zu. In Java nicht möglich; kann zu unnötig komplizierten Programmen führen.
+
+
+d) Hängt von der Situation ab. Die erste Methode zum Beispiel ist praktisch, wenn man viele Klassen hat die irgendiwie BigInteger-Rechnungen ausführen müssen; Ist diese Funktionalität nur in einer Klasse gewollt, sollte man nicht-statische Methoden anwenden.
+
+1. static BigInteger multiply(BigInteger a, BigInteger b) 
+
+Kann überall mit DIESEKLASSE.multiply aufgerufen werden, und liefert das Ergebnis auch zurück.
+
+
+2. BigInteger multiply(BigInteger a)
+
+Nicht statisch, das heißt man muss ein Objekt der Klasse erstellen, um die Methode benutzen zu können.
+
+
+3. void multiply(BigInteger a, BigInteger b)
+
+Nicht statisch, das heißt man muss ein Objekt der Klasse erstellen, um die Methode benutzen zu können. Außerdem wird kein BigInteger zurückgeliefert, also wird das Ergebnis wahrscheinlich direkt in der Methode ausgegeben.

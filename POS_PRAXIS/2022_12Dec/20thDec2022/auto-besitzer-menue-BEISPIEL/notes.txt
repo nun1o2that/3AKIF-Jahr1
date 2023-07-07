@@ -1,0 +1,28 @@
+KLASSEauto
+-------
+- marke
+- typ
+- farbe
+- besitzer (OBJEKT EINER ANDEREN KLASSE)
+~~~~~~~~
++ eingabe
++ liste
+
+
+KLASSE besitzer
+--------
+- name
+- strasse
+- plz
+- ort
+~~~~~~~~
++ eingabe
+
+
+menü
+--------
+1 - eingabe auto (?)
+2 - liste
+3 - ende
+
+MINUS BEDEUTET -> PRIVATE VARIABLE

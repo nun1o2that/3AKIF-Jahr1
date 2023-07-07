@@ -1,0 +1,17 @@
+call by value:
+	kopieren eines Wertes von einer variable in eine zweite. beim manipulieren
+	der zweiten bleibt die erste gleich
+
+call by reference:
+	bei einem funktionsaufruf wird nicht der wert einer variablen als argument
+	vorgegeben, sondern information über den speicherort der variable
+	-> auswirkung auf variable wenn parameter während funktionsausführung geändert w
+
+Beispiel 1:
+Output:
+10
+5
+
+Beispiel 2:
+Output:
+0

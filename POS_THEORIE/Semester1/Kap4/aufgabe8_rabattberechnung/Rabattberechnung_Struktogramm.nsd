@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="https://structorizer.fisch.lu" version="3.32-11" preRepeat="until " postFor="to" preReturn="return" postForIn="in" preWhile="while " output="OUTPUT" input="INPUT" preFor="for" preExit="exit" preLeave="leave" ignoreCase="true" preThrow="throw" preForIn="foreach" stepFor="by" namespace="" author="mmmilosxx" created="2022-10-17" changedby="mmmilosxx" changed="2022-10-17" origin="Structorizer 3.32-11" text="&#34;Rabattberechnung&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;int KN&#34;,&#34;double JU&#34;,&#34;double Rabatt&#34;,&#34;String frage&#34;,&#34;Scanner eingabe = new Scanner(System.in)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<instruction text="&#34;Programm Überschrift&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+		<repeat text="&#34;while ( frage.equals(&#34;&#34;J&#34;&#34;) || frage.equals(&#34;&#34;j&#34;&#34;) || frage.equals(&#34;&#34;Ja&#34;&#34;) || frage.equals(&#34;&#34;ja&#34;&#34;) || frage.equals(&#34;&#34;JA&#34;&#34;) )&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+			<qRepeat>
+				<instruction text="&#34;&#34;&#34;Geben Sie Ihre Kundennummer ein: &#34;&#34; + Eingabe von KN&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;&#34;&#34;Geben Sie Ihren Jahresumsatz ein: &#34;&#34; + Eingabe von JU&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<alternative text="&#34;(JU &#62; 10000)&#34;" comment="&#34;&#34;" color="ffffff" disabled="0">
+					<qTrue>
+						<instruction text="&#34;Rabatt = JU * 0.03&#34;,&#34;&#34;&#34;Ihr Rabatt: 0.03&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qTrue>
+					<qFalse>
+						<instruction text="&#34;Rabatt = JU * 0.02&#34;,&#34;&#34;&#34;Ihr Rabatt: 0.02&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+					</qFalse>
+				</alternative>
+				<instruction text="&#34;&#34;&#34;Ihr Endbetrag: &#34;&#34; + Ausgabe von (JU - Rabatt) &#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;&#34;&#34;Abgezogen wurden: &#34;&#34; + Ausgabe von Rabatt&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;&#34;&#34;Wollen Sie weiter berechnen?&#34;&#34;&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+				<instruction text="&#34;Eingabe von frage&#34;" comment="&#34;&#34;" color="ffffff" rotated="0" disabled="0"></instruction>
+			</qRepeat>
+		</repeat>
+	</children>
+</root>

@@ -1,0 +1,27 @@
+int a, b;
+Richtiger Ausdruck.
+
+float c;
+Richtiger Ausdruck.
+
+boolean[] d = {true, true, false};
+Richtiger Ausdruck.
+
+a = 4.5;
+Falscher Ausdruck. a ist eine Variable des Typs Integer, und kann
+somit keine Dezimalzahlen speichern.
+
+b = c + 5;
+Falscher Ausdruck. c ist vom Typ float, und speichert somit nur 
+Dezimalzahlen. ein beliebiger Wert c plus 5 ergibt in Java immer
+einen float-Wert. Dieser kann in der Integer-Variable b so nicht 
+gespeichert werden.
+
+d[c] = true;
+Falscher Ausdruck. Zum angeben des Index muss immer ein Integer
+verwendet werden. c ist eine float-Variable, deswegen kann dieser
+Befehl nicht kompiliert werden.
+
+d[5] = false;
+Falscher Ausdruck. Der höchste abrufbare Index im Boolean-Array d
+ist 2.

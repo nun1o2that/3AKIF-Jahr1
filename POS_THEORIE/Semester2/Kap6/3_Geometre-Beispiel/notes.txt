@@ -1,0 +1,3 @@
+Zusammenzählen der Umfänge kann nicht einfach mit AFigur erfolgen (figur.getUmfang), da die Abstrakte Klasse AFigur diese Methoden nicht hat. Zum Beheben kann man z.B Typecasting zu FigurHelper machen, da dieses Interface die Methoden beinhält.
+
+Stattdessen wäre es einfacher, nicht ein Interface und eine abstrakte Klasse zu verwenden, sondern einfach eine Überklasse.

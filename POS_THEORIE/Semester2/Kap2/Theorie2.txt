@@ -1,0 +1,13 @@
+Ein normales Array muss mit einer bestimmten Größe initialisiert werden z.B.:
+int[] zahlenArray = new int[5];
+int[] zahlenArray = {1, 2, 3, 4, 5};
+Seine Größe ist unveränderlich. Sie sind also praktisch, wenn die Menge an Daten im Vorhinein bekannt ist.
+Bei normalen Arrays ist nur das Verändern von Werten an den gegebenen Indexen möglich.
+
+Bei ArrayLists ist das Mitgeben der Größe optional, die default-capacity ist 10. Die Größe der ArrayList verändert sich beim Hinzufügen / Löschen von Daten, ist also praktisch, wenn man eine unvorhersehbare Menge an Daten verarbeiten muss.
+
+
+Interessanterweise ist die Länge eines Arrays mit einem Attribut abzurufen, bei ArrayLists mit einer Methode, z.B;
+System.out.println(zahlenArray.length);
+System.out.println(zahlenArrayList.size());
+

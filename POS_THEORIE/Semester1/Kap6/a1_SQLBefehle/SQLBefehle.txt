@@ -1,0 +1,26 @@
+a.	SELECT * FROM Schüler WHERE Name = 'Müller'
+
+Dieser Ausdruck ist korrekt.
+
+
+
+b.	SELECT Alter FROM WHERE Vorname LIKE 'O%'
+
+Dieser Ausdruck ist inkorrekt. nach FROM fehlt der Name einer Tabelle, in der gesucht werden soll.
+
+
+
+c.	SELECT Schüler.Alter FROM Schüler WHERE Name = 'Müller'
+
+Dieser Ausdruck ist inkorrekt. Punktoperatoren werden in SQL so nicht benutzt.
+SELECT Alter FROM Schüler WHERE Name = 'Müller'
+
+
+
+d.	SELECT * FROM Schüler ORDER BY Alter ASC DESC
+
+Dieser Ausdruck ist inkorrekt. Die Spalte Alter kann nicht gleichzeitig ASC und DESC sortiert werden.
+ASC = aufsteigend (0-9, a-z)
+DESC = absteigend (9-0, z-a)
+Mehrere Spalten können im Befehl aber nacheinander verschieden sortiert werden.
+SELECT * FROM Schüler ORDER BY Alter DESC, Name ASC

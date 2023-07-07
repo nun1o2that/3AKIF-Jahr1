@@ -1,0 +1,2 @@
+ArrayList: O(n)
+Tree: O(log n) - gleichzustellen mit Binärer Suche?

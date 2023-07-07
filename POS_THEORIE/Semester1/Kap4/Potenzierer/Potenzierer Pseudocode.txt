@@ -1,0 +1,20 @@
+-----------------------------------------------------
+Algorithmus 1: Potenzierer
+Eingabe: Eingabe von Integer-Zahlen b, n
+Ausgabe: Potenz b^n
+-----------------------------------------------------
+1: begin
+2:   Ausgabe "Bitte Basis b eingeben:"
+3:   b := Benutzereingabe
+4:   if b < 1 then
+5:      Ausgabe: "Falsche Eingabe"
+6:      Exit
+7:   Ausgabe "Bitte Exponent n eingeben:"
+8:   n := Benutzereingabe
+9:   e := 1
+10:  while n > 0 do
+11:    e := e * b 
+12:    n := n - 1
+13:  Ausgabe "Ergebnis: " + e
+14: ende
+-----------------------------------------------------

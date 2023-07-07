@@ -1,0 +1,23 @@
+Wie lange die ausgerechneten Werte richtig sind hängt davon ab, welcher Datentyp für das Array genommen wird. Ab einem bestimmten
+Wert passiert dann ein Overflow.
+
+Bei meinem Programm (mit int):
+...
+f(30) = 832040
+f(31) = 1346269
+f(32) = 2178309
+f(33) = 3524578
+f(34) = 5702887
+f(35) = 9227465
+f(36) = 14930352
+f(37) = 24157817
+f(38) = 39088169
+f(39) = 63245986
+f(40) = 102334155
+f(41) = 165580141
+f(42) = 267914296
+f(43) = 433494437
+f(44) = 701408733
+f(45) = 1134903170
+f(46) = 1836311903
+f(47) = -1323752223
